@@ -17,4 +17,11 @@
 <% end %>
 
 
-<h2>Display your second ship here</h2>
+<h2>Ship 1</h2>
+<% @ships.each do |ships| %>
+  <div class="ship">
+    <p>Name: <%= ships.name %></p><br>
+    <p>Type: <%= ships.type %></p><br>
+    <p>Booty: <%= ships.booty %></p><br>
+  </div><br>
+<% end %>
